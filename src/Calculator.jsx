@@ -1,18 +1,8 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import style from './Calculator.module.css'
+import CalculatorContext from './calcContext'
 const Calculator = () => {
-    const [data, setData] = useState("");
-    const calcBtns = [];
-    [9, 8, 7, 6, 5, 4, 3, 2, 1, 0, ".", "%"].forEach(item => {
-        calcBtns.push(
-            <button onClick={e => {
-                setData(data + e.target.value)
-            }}
-                value={item}
-                key={item}
-            >{item}</button>
-        )
-    })
+    const{data,setData,calcBtns}=useContext(CalculatorContext)
     return (
         <div>
             <div className={style.calculator}>
