@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calculator {
+    max-width: 400px;
+    min-height: 77vh;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+    margin-top: 40px;
+}
+button {
+    font-size: 2rem;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.modifiers button {
+    background-color: #c2c2c2;
+}
+.operations {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.operations button {
+    background-color: orange;
+    color: white;
+}
+.digits button {
+    background-color: #3f3f3f;
+    color: white;
+}
+.digits button:hover{
+    background-color: #5f5f5f;
+}
+.showInput {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 2rem;
+    padding:30px 40px;
+    height: 30px;
+    border-radius: 40px;
+    margin: 24px 0;
+    color: white;
+    background-color: rgb(12, 12, 12);
+}
+.calcBody {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+}
+.digits {
+    display: flex;
+    flex-wrap: wrap;
+}
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 26px;
+    border-radius: 50%;
+    margin: 6px;
+}
